@@ -34,7 +34,7 @@ program
 
 program
   .command('text-to-js')
-  .description('Convert a text file to json')
+  .description('Convert a text file to js')
   .action(() => {
     textToJs();
   });
