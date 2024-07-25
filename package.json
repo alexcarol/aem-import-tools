@@ -1,5 +1,5 @@
 {
-  "name": "import-tools",
+  "name": "aem-import-tools",
   "version": "1.0.0",
   "description": "Tools to assist in AEM Edge Delivery imports",
   "type": "module",
