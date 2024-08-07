@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import csvToJson from './commands/csv-to-json.js';
+import { csvToJson, csvToJs } from './commands/csv.js';
 import jsonToJs from './commands/json-to-js.js';
 import { textToJson, textToJs } from './commands/text.js';
 
@@ -17,6 +17,14 @@ program
   .action(() => {
     csvToJson();
   });
+
+program
+  .command('csv-to-js')
+  .description('Convert a CSV file to a js file')
+  .action(() => {
+    csvToJs();
+  });
+
 
 program
   .command('json-to-js')
