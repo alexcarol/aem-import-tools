@@ -1,10 +1,12 @@
 import csv from 'csv-parser';
+import stripBom from 'strip-bom-stream';
 import { stdin, stdout } from 'process';
 
 export function csvToJson() {
   const results = [];
 
   stdin
+    .pipe(stripBom())
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
@@ -16,6 +18,7 @@ export function csvToJs() {
   const results = [];
 
   stdin
+    .pipe(stripBom())
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
