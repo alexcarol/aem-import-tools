@@ -1,6 +1,6 @@
 {
   "name": "aem-import-tools",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tools to assist in AEM Edge Delivery imports",
   "type": "module",
   "bin": {
@@ -15,9 +15,7 @@
   "dependencies": {
     "commander": "^12.1.0",
     "csv-parser": "^3.0.0",
-    "process": "^0.11.10"
-  },
-  "devDependencies": {
+    "process": "^0.11.10",
     "strip-bom-stream": "^5.0.0"
   }
 }
